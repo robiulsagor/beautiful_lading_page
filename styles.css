@@ -1,0 +1,241 @@
+/* #fe7101  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(./bg-img.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    /* border: 2px solid red; */
+    margin: auto;
+    margin: 0 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #fff;
+}
+
+.nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li a {
+    margin: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 17px;
+}
+
+.nav ul li a:hover {
+    color: #fe7101;
+}
+
+.search_bar {
+    /* border: 1px solid #fe7101; */
+    display: flex;
+    width: 23%;
+}
+
+.search_bar input {
+    background: transparent;
+    color: aliceblue;
+    height: 40px;
+    font-size: 17px;
+    flex: 4;
+    padding: 0 9px;
+    border: 1px solid #fe7101;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.search_bar input::placeholder {
+    color: aliceblue;
+}
+
+.search_bar button {
+    flex: 2;
+    color: #fff;
+    font-size: 17px;
+    background-color: #fe7101;
+    border: 1px solid #fe7101;
+    border-radius: 0 0 6px 0;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search_bar button:hover {
+    background-color: #fe7301cf;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 82px);
+    gap: 20px;
+}
+
+.main_left {
+    color: #fff;
+    /* width: 1000px; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.main_left h1 {
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.main_left h1 span {
+    color: #fe7101;
+    font-size: 62px;
+}
+
+.main_left p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 29px;
+}
+
+.main_left button {
+    background-color: #fe7101;
+    padding: 12px 55px;
+    color: #fff;
+    font-size: 21px;
+    border: none;
+    font-family: inherit;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.main_left button:hover {
+    background-color: #fe7301ac;
+}
+
+/* Main left ends here */
+
+/* Main Right begins here */
+
+.main_right {
+    /* width: 550px; */
+    flex: 1;
+    /* height: 500px; */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+}
+
+.right_container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form_title {
+    background: #fff;
+    color: #fe7101;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+}
+
+form input[type=text], form input[type=password] {
+    height: 35px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fe7101;
+    background: transparent;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #ffffffc5;
+}
+
+form input:focus {}
+
+form input[type=submit] {
+    background: #fe7101;
+    color: #fff;
+    text-align: center;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background: #ffffffb1;
+}
+
+.form_footer p {
+    color: #eee;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+}
+
+.form_footer p a {
+    color: #fe7101;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.form_footer p a:hover {
+    color: #ddd;
+}
+
+.footer_footer p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 35px;
+}
