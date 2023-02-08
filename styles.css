@@ -188,8 +188,6 @@ form input::placeholder {
     color: #ffffffc5;
 }
 
-form input:focus {}
-
 form input[type=submit] {
     background: #fe7101;
     color: #fff;
