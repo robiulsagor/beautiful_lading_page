@@ -19,7 +19,13 @@
                 <h1>theDevTeam</h1>
             </div>
 
-            <div class="nav">
+            <div class="mobile_bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav nav_mobile">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#home">About</a></li>
@@ -33,6 +39,7 @@
                 <input type="text" placeholder="Type to search">
                 <button>Search</button>
             </div>
+
         </div>
         <!-- Navbar ends here.. -->
 
@@ -53,10 +60,10 @@
             </div>
 
             <div class="main_right">
-                <div class="right_container">
+                <div class="right_container login">
                     <h2 class="form_title">Login Here</h2>
                     <form>
-                        <input type="text" placeholder="Enter email here">
+                        <input type="email" placeholder="Enter email here">
                         <input type="password" placeholder="Enter password here">
                         <input type="submit" value="Login" class="submit_btn">
                     </form>
@@ -64,7 +71,7 @@
                     <div class="form_footer">
                         <div>
                             <p>Don't have an account?</p>
-                            <p><a href="#">Signup</a> here</p>
+                            <p><a href="#" id="show_signup_form">Signup</a> here</p>
                         </div>
 
                         <div class="footer_footer">
@@ -79,10 +86,40 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="right_container signup">
+                    <h2 class="form_title">Signup Here</h2>
+                    <form>
+                        <input type="text" placeholder="Enter name here">
+                        <input type="email" placeholder="Enter email here">
+                        <input type="password" placeholder="Enter password here">
+                        <input type="submit" value="Signup" class="submit_btn">
+                    </form>
+
+                    <div class="form_footer">
+                        <div>
+                            <p>Already have an account?</p>
+                            <p><a href="#" id="hide_signup_form">Login</a> here</p>
+                        </div>
+
+                        <!-- <div class="footer_footer">
+                            <p>Login With</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-skype"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
             </div>
             <!-- Main part ends here -->
 
+
         </div>
+        <script src="./script.js"></script>
 </body>
 
 </html>
